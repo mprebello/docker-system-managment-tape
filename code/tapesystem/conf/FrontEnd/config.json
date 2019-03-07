@@ -1,0 +1,16 @@
+{
+  "serverdata": {
+    "host": "localhost",
+    "port": 3001
+  },
+  "server": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "authentication": {
+    "ldapserver": "ldap://ldaptoconnect.local:389",
+    "searchBase": "dc=ldap,dc=com",
+    "filter": "(uid={{username}})",
+    "secretKeyToken" : "secretkeyfromtoken"
+  }
+}

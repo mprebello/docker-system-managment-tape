@@ -1,0 +1,11 @@
+version: '2'
+services:
+  webexternal:
+    build: ./tapesystem
+    hostname: tapesystem
+    restart: always
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    environment:
+      - TZ=America/Sao_Paulo
