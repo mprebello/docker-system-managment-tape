@@ -8,9 +8,14 @@
     "port": 3000
   },
   "authentication": {
-    "ldapserver": "ldap://ldaptoconnect.local:389",
-    "searchBase": "dc=ldap,dc=com",
+    "ldapserver": "ldap://ldapserver.domain.local:389",
+    "searchBase": "dc=domain,dc=local",
     "filter": "(uid={{username}})",
-    "secretKeyToken" : "secretkeyfromtoken"
+    "secretKeyToken" : "XXXXXXXXXXXXXXXXXXXX",
+    "google_recaptcha_client_side" : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "google_recaptcha_server_side" : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "google_verify_site": "https://www.google.com/recaptcha/api/siteverify",
+    "proxy_to_access": "http://squid.domain.local:3128",
+    "mode": "desenv"
   }
 }
